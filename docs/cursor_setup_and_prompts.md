@@ -5,17 +5,15 @@
 ## 1. リポジトリのセットアップ（初回のみ）
 
 ```bash
-# Cドライブにフォルダ作成
-cd C:/
-mkdir aij-timber-seminar
-cd aij-timber-seminar
+# リポジトリフォルダへ移動
+cd C:\Projects\aij-timber-seminar
 
 # Git初期化
 git init
 git remote add origin https://github.com/<your-name>/aij-timber-seminar.git
 
 # CursorでフォルダをOpen Folder
-# → C:/aij-timber-seminar
+# → C:\Projects\aij-timber-seminar
 ```
 
 ファイルを配置後：
