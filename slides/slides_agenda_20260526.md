@@ -56,10 +56,27 @@ style: |
   section.lead > h2 {
     font-size: 27px !important;
   }
-  section.lead ul {
-    list-style: none;
-    padding-left: 0;
+  section.lead ul,
+  section.lead ol {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+  }
+  section.lead li {
+    list-style: none !important;
+  }
+  section.lead li::marker {
+    content: none !important;
+  }
+  section.lead p::before {
+    content: none !important;
+  }
+  section.lead .cover-details {
+    text-align: center;
     margin: 0;
+  }
+  section.lead .cover-details p {
+    margin: 0.35em 0;
   }
 ---
 
@@ -69,13 +86,14 @@ style: |
 
 ## 「木質構造設計規準 同解説」改定の概要
 
-**日時**：2026年5月29日（金）16:00〜17:00
+<div class="cover-details">
 
-**登壇者**：大岩・松尾
+<p><strong>日時</strong>：2026年5月29日（金）16:00〜17:00</p>
+<p><strong>発表者</strong>：大岩・松尾</p>
+<p><strong>対象</strong>：技術開発部</p>
+<p><strong>形式</strong>：講義＋質疑（計1時間）</p>
 
-**対象**：社内構造設計者（約30名）
-
-**形式**：講義＋質疑（計1時間）
+</div>
 
 ---
 
