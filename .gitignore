@@ -1,0 +1,10 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# PDF出力（必要に応じてコメントアウト）
+# slides/*.pdf
+
+# エディタ
+.vscode/
+*.swp
