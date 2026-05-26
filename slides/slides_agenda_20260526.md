@@ -5,20 +5,64 @@ size: 16:9
 paginate: true
 math: mathjax
 style: |
+  :root {
+    --pad-top: 48px;
+    --pad-x: 64px;
+    --pad-bottom: 40px;
+    --title-band: 80px;
+    --title-body-gap: 24px;
+  }
   section {
     font-size: 20px;
+    box-sizing: border-box;
   }
-  h1 {
-    font-size: 36px;
+  section.lead {
+    justify-content: center !important;
+    align-items: center;
+    text-align: center;
+    padding: 40px var(--pad-x);
   }
-  h2 {
-    font-size: 27px;
+  section.lead > h1,
+  section.lead > h2 {
+    margin: 0 0 12px 0 !important;
+    line-height: 1.3;
+  }
+  section:not(.lead) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start !important;
+    align-items: stretch;
+    text-align: left;
+    padding: var(--pad-top) var(--pad-x) var(--pad-bottom);
+  }
+  section:not(.lead) > h1,
+  section:not(.lead) > h2 {
+    flex: 0 0 var(--title-band);
+    margin: 0 0 var(--title-body-gap) 0 !important;
+    padding: 0;
+    line-height: 1.3;
+    font-size: 27px !important;
+    font-weight: bold;
+    box-sizing: border-box;
+  }
+  section:not(.lead) > :not(h1):not(h2) {
+    margin-top: 0 !important;
+    flex: 0 0 auto;
+  }
+  section.lead > h1,
+  section:not(.lead) > h1 {
+    font-size: 36px !important;
+  }
+  section.lead > h2 {
+    font-size: 27px !important;
   }
 ---
 
-# AIJ木質構造設計規準改定 社内勉強会
+<!-- _class: lead -->
 
-## 「木質構造設計規準・同解説」改定の概要
+# AIJ 木質構造設計規準 改定 社内勉強会
+
+## 「木質構造設計規準 同解説」改定の概要
 
 - **日時**：2026年5月29日（金）16:00〜17:00
 - **登壇者**：大岩・松尾
